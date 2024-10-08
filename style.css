@@ -1,0 +1,152 @@
+* {
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html {
+    overflow: auto;
+}
+
+html::-webkit-scrollbar {
+    scrollbar-width: none;
+}
+
+body {
+    background: url("Imgs/cabaña.png") no-repeat center;
+    background-size: 250vh 730px;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 150px;
+}
+
+
+.container {
+    width: 250vh;
+    height: 150vw;
+    background: url('imgs/todoVerde.png') repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    row-gap: 100px;
+}
+
+.info {
+    width: 950px;
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 70px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(80px);
+
+    /*filter: drop-shadow(10px 10px 10px black);
+    padding: 20px;*/
+
+    border-radius: 20px;
+}
+
+.info img {
+    width: 390px;
+    height: 250px;
+    border-radius: var(--border);
+}
+
+.info:hover {
+    animation: zoomIn 0.5s forwards;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+
+.info .txt {
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+
+    text-overflow: ellipsis;
+
+    .title {
+        text-align: justify;
+        font-size: 32px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+}
+
+
+.info .content {
+    text-align: center;
+    cursor: default;
+}
+
+
+footer{
+    height: 200px;
+    width: 250vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer span,
+footer span {
+    width: 150px;
+    text-align: center;
+    color: rgb(15, 40, 15);
+}
+
+.ig {
+    visibility: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 0px;
+}
+
+footer span:hover,
+footer span:hover {
+    cursor: pointer;
+    
+    .ig {
+        position: relative;
+        top: -20px;
+        visibility: visible;
+        right: var(--porcent);
+    }
+}
+
+.buttons{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+
+    button{
+        width: fit-content;
+        border-color: transparent;
+        border-radius: 4px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+}
+
+
