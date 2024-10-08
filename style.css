@@ -21,6 +21,11 @@ body {
     row-gap: 150px;
 }
 
+html, body{
+    all: unset; 
+    pading: 0; 
+    margin: 0; 
+}
 
 .container {
     width: 250vh;
