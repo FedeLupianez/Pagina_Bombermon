@@ -12,7 +12,7 @@ html::-webkit-scrollbar {
 }
 
 body {
-    background: url("Imgs/cabaña.png") no-repeat center;
+    background: url("imgs/cabaña.png") no-repeat center;
     background-size: 250vh 730px;
     background-position: top;
     display: flex;
