@@ -22,7 +22,6 @@ body {
 }
 
 html, body{
-    all: unset; 
     pading: 0; 
     margin: 0; 
 }
